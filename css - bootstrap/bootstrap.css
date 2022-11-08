@@ -10929,3 +10929,9 @@ p{
     padding: 10px;
     border-radius: 20px;
 }
+.personal_skills{
+    color: black;
+}
+.disabled{
+    color: var(--bs-primary) !important;
+}
