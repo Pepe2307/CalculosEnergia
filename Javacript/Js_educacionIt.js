@@ -13,25 +13,34 @@ function generar_tabla(){
     presupuesto = prompt("Ingrese la cantidad de presupuesto disponible: ")
     tiempo_de_uso = prompt("Ingrese la cantidad de tiempo que consumira el mecanismo: ")
 
+    var tabla = document.getElementById("tabla_generada_id");
+    var nueva_fila = tabla.insertRow(tabla.rows.length/2+1)
     
-    alert("funciona");
     
+    var celda1 = nueva_fila.insertCell(0);
+    var celda2 = nueva_fila.insertCell(1);
+    var celda3 = nueva_fila.insertCell(2);
+    var celda4 = nueva_fila.insertCell(3);
+    var celda5 = nueva_fila.insertCell(4);
+    var celda6 = nueva_fila.insertCell(5);
     
-    document.getElementById('id_button').innerHTML = ''; //Limpiamos texto anteriormente guardado
-    document.getElementById('id_button').innerHTML = tipo_energia; //Agregamos nuevo texto
-
-
-    document.getElementById('tipo_energia').innerHTML = tipo_energia;
-    document.getElementById('nombre').innerHTML = nombre;
-    document.getElementById('energia_gen').innerHTML = energia_gen + " kw/h";
-    document.getElementById('presupuesto').innerHTML = presupuesto + " $";
-    document.getElementById('tiempo_aprox').innerHTML = tiempo_de_uso + " horas";
+    // Agregar valores
+    celda1.innerHTML = tipo_energia;
+    celda2.innerHTML = nombre;
+    celda3.innerHTML = energia_gen + " kw/h";
+    celda4.innerHTML = presupuesto  + " $";
+    celda5.innerHTML = tiempo_de_uso + " horas";
 
     efectividad = energia_gen / ( presupuesto * tiempo_de_uso );
-    document.getElementById('efectividad').innerHTML = efectividad;
 
-    /* alert("La efectividad de la fila ingresada es de: " + efectividad); */
+    celda6.innerHTML = efectividad;
+
+    alert("La efectividad de la fila ingresada es de: " + efectividad); 
 }
+
+
+
+
 
 
 
