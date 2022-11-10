@@ -7,11 +7,17 @@ var efectividad;
 
 function generar_tabla(){
 
-    tipo_energia = prompt("Ingrese el tipo de energia del mecanismo: ")
+    /* tipo_energia = prompt("Ingrese el tipo de energia del mecanismo: ")
     nombre = prompt("Ingrese el nombre del mecanismo a utilizar: ")
     energia_gen = prompt("Ingrese la cantidad de KW/H a utilizar: ")
     presupuesto = prompt("Ingrese la cantidad de presupuesto disponible: ")
-    tiempo_de_uso = prompt("Ingrese la cantidad de tiempo que consumira el mecanismo: ")
+    tiempo_de_uso = prompt("Ingrese la cantidad de tiempo que consumira el mecanismo: ") */
+
+    tipo_energia = document.getElementById('id_tipo').value;
+    nombre = document.getElementById('id_nombre').value;
+    energia_gen = document.getElementById('id_energia').value;
+    presupuesto = document.getElementById('id_presupuesto').value;
+    tiempo_de_uso = document.getElementById('id_tiempo').value;
 
     var tabla = document.getElementById("tabla_generada_id");
     var nueva_fila = tabla.insertRow(tabla.rows.length/2+1)
@@ -37,10 +43,6 @@ function generar_tabla(){
 
     alert("La efectividad de la fila ingresada es de: " + efectividad); 
 }
-
-
-
-
 
 
 
