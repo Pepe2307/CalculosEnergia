@@ -5,6 +5,8 @@ var presupuesto;
 var tiempo_de_uso;
 var efectividad;
 
+let array_datos = [ [] ];
+
 function generar_tabla(){
 
     /* tipo_energia = prompt("Ingrese el tipo de energia del mecanismo: ")
@@ -44,7 +46,12 @@ function generar_tabla(){
     alert("La efectividad de la fila ingresada es de: " + efectividad); 
 }
 
+function comparar_eficiencias(){
+    alert("La efectividad de la fila ingresada es de: " + efectividad);
+    document.write(nombre + energia_gen + presupuesto + tiempo_de_uso );
+    document.append()
 
+}
 
 
 /* function agregar_texto(){
