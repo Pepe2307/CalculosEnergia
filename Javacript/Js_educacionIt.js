@@ -6,7 +6,8 @@ var tiempo_de_uso;
 var efectividad;
 
 let array_datos = [ [] ];
-let valor_mas_alto = 0;
+let efectividad_mas_alta = 0;
+
 
 function generar_tabla(){
 
@@ -42,10 +43,45 @@ function generar_tabla(){
     efectividad = energia_gen / ( presupuesto * tiempo_de_uso );
     celda6.innerHTML = efectividad;
 
-    if (efectividad>valor_mas_alto){
+
+    /* if (efectividad>valor_mas_alto){
         valor_mas_alto=efectividad;
     }
-    document.getElementById('eficiencias_id').value = "x";
+    console.log(valor_mas_alto)
+
+    document.getElementById("eficiencias_id").innerHTML=valor_mas_alto; */
+
+
+    if (efectividad > efectividad_mas_alta){
+
+        efectividad_mas_alta=efectividad;
+        document.getElementById("eficiencias_id").innerHTML=
+        "El sistema mas eficiente es el de: " + nombre + 
+        " con una eficiencia de: " + efectividad_mas_alta;
+
+
+    }
+    console.log(efectividad_mas_alta)
+
+    
+
+
+
+    /* text = document.createTextNode(celda6.innerHTML); */
+
+    /* document.getElementById('eficiencias_id').value = valor_mas_alto;
+    var parrafo_valor_alto = document.getElementById("eficiencias_id");
+    parrafo_valor_alto.appendChild(valor_mas_alto);
+
+    var parrafo_valor_alto = document.getElementById("eficiencias_id");
+
+    var text = document.createTextNode(efectividad);
+    parrafo_valor_alto.appendChild(text);
+
+    parrafo_valor_alto.textContent += "This just got added"; */
+
+
+    
 
     alert("La efectividad de la fila ingresada es de: " + efectividad); 
 }
