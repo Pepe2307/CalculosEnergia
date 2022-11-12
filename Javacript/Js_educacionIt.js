@@ -11,6 +11,7 @@ let efectividad_mas_alta = 0;
 
 function generar_tabla(){
 
+    // Obtenemos datos y generamos nueva fila
     tipo_energia = document.getElementById('id_tipo').value;
     nombre = document.getElementById('id_nombre').value;
     energia_gen = document.getElementById('id_energia').value;
@@ -28,12 +29,12 @@ function generar_tabla(){
     var celda6 = nueva_fila.insertCell(5);
 
 
-
+    // Guardamos los datos en una matriz
     array_datos.push([tipo_energia, nombre, energia_gen, presupuesto, tiempo_de_uso])
     console.log(array_datos)
 
 
-    // Agregar valores
+    // Agregamos los datos a la fila
     celda1.innerHTML = tipo_energia;
     celda2.innerHTML = nombre;
     celda3.innerHTML = energia_gen + " kw/h";
@@ -44,78 +45,23 @@ function generar_tabla(){
     celda6.innerHTML = efectividad;
 
 
-    /* if (efectividad>valor_mas_alto){
-        valor_mas_alto=efectividad;
-    }
-    console.log(valor_mas_alto)
-
-    document.getElementById("eficiencias_id").innerHTML=valor_mas_alto; */
-
-
+    // Obtenemos el metodo mas eficiente
     if (efectividad > efectividad_mas_alta){
 
         efectividad_mas_alta=efectividad;
         document.getElementById("eficiencias_id").innerHTML=
-        "El sistema mas eficiente es el de: " + nombre + 
-        " con una eficiencia de: " + efectividad_mas_alta;
-
-
+        "El sistema energetico recomendado por ser el mas eficiente es el de " + 
+        nombre + ", con una eficiencia de: " + efectividad_mas_alta;
     }
     console.log(efectividad_mas_alta)
 
-    
-
-
-
-    /* text = document.createTextNode(celda6.innerHTML); */
-
-    /* document.getElementById('eficiencias_id').value = valor_mas_alto;
-    var parrafo_valor_alto = document.getElementById("eficiencias_id");
-    parrafo_valor_alto.appendChild(valor_mas_alto);
-
-    var parrafo_valor_alto = document.getElementById("eficiencias_id");
-
-    var text = document.createTextNode(efectividad);
-    parrafo_valor_alto.appendChild(text);
-
-    parrafo_valor_alto.textContent += "This just got added"; */
-
-
-    
 
     alert("La efectividad de la fila ingresada es de: " + efectividad); 
 }
 
-function comparar_eficiencias(){
-    // alert("La efectividad de la fila ingresada es de: " + efectividad);
 
-    document.getElementById('eficiencias_id').value = "x"
-}
+// function comparar_eficiencias(){
+//     alert("La efectividad de la fila ingresada es de: " + efectividad);
 
-
-/* function agregar_texto(){
-    tipo_energia = prompt("Ingrese el tipo de energia del mecanismo: ")
-    nombre = prompt("Ingrese el nombre del mecanismo a utilizar: ")
-    energia_gen = prompt("Ingrese la cantidad de KW/H a utilizar: ")
-    presupuesto = prompt("Ingrese la cantidad de presupuesto disponible: ")
-    tiempo_de_uso = prompt("Ingrese la cantidad de tiempo que consumira el mecanismo: ")
-}
- */
-
-
-
-/* ------------------------------------ */
-
-
-
-/* document.addEventListener('DOMContentLoaded', (event) => {
-    
-    do{
-        nombre1 = prompt("Ingrese el nombre del mecanismo a utilizar: ")
-        energia1 = prompt("Ingrese la cantidad de KW/H a utilizar: ")
-        presupuesto1 = prompt("Ingrese la cantidad de presupuesto disponible: ")
-        tiempo1 = prompt("Ingrese la cantidad de tiempo que consumira el mecanismo: ")
-    } while( confirm("¿Guardar datos?") == false);
-  })
-
-document.write(nombre1 + energia1 + presupuesto1 + tiempo1 ); */
+//     document.getElementById('eficiencias_id').value = "x"
+// }

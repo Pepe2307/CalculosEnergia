@@ -4,25 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta name="description" content="Trabajo integrador de EducacionIt - JAVASCRIPT">
-    <!-- Descripcion de la Pagina -->
-
     <meta name="keywords" content="Trabajo integrado, EducacionIt, Javascript">
-    <!-- Palabras Clave -->
-
     <link rel="stylesheet" type="text/css" href="css - bootstrap/bootstrap.css">
-    <!--                   ^Link con CSS^                     -->
-
     <link rel="icon" href="Recursos/icon.png">
-    <!--Set up icono de pestaña-->
 
     <title>Integrador Ed_It</title>
 </head>
 
-    <!-- Comienzo - Navbar  -->
 
-    <!-- <nav class="navbar navbar-expand-lg bg-light"> -->
+<body>
+
+    <!-- Comienzo - Navbar  -->
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Pablo Paez</a>
@@ -31,12 +24,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Github</a>
-              <a class="nav-link" href="#">CV</a>
-              <a class="nav-link" href="#">+Info</a>
-              <a class="nav-link disabled">
-                Contacto: pablopaez2307@gmail.com / 011 4451-4795
+              <a class="nav-link active" aria-current="page" href="https://github.com/Pepe2307" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+                Github
             </a>
+              <a class="nav-link active" href="https://www.linkedin.com/in/pablo-paez-t/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                LinkedIn
+            </a>
+              <a class="nav-link disabled">
+                Contacto: <br>
+                Mail: pablopaez2307@gmail.com / Celular-WhatsApp: 11 4451-4795
+              </a>
             </div>
           </div>
         </div>
@@ -55,7 +54,10 @@
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-        <p class="personal_skills">Desarrollador Web, Profesor y Programador.</p>
+        <p class="personal_skills">
+            Desarrollador Web FrontEnd, Profesor y Programador.
+            <br>
+        </p>
     </div>
     </div>
     <!-- Fin offcanvas -->
@@ -114,7 +116,6 @@
     <!-- Fin Table de Ejemplo -->
 
     
-
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
         Agregar datos de nueva fila
@@ -141,7 +142,7 @@
                         
                         <select class="form-select mb-3" aria-label="Default select example"
                         name="input_tipo" id="id_tipo">
-                            <option selected>Opciones de energia:</option>
+                            <option selected value="">Opciones de energia:</option>
                             <option value="Eolica">Eolica</option>
                             <option value="Hidraulica">Hidraulica</option>
                             <option value="Solar">Solar</option>
@@ -187,7 +188,6 @@
     <!-- Fin Modal -->
 
 
-
     <!-- Comienzo Tabla Generada -->
     <div class="tabla_generada">
 
@@ -226,15 +226,16 @@
     </div>
     <!-- Fin Tabla Generada -->
 
+    
     <!-- Botones -->
     <div class="botones">
-        <button class="gen_tabla" onclick="comparar_eficiencias()">
+        <!-- <button class="gen_tabla" onclick="comparar_eficiencias()">
             <ion-icon name="chevron-down-circle-outline"></ion-icon>
             Comparar eficiencias:
             <ion-icon name="chevron-down-circle-outline"></ion-icon>
-        </button>
+        </button> -->
 
-        <br><br>
+        <!-- <br><br> -->
 
         <div class="badge bg-primary text-wrap" style="width: 30rem;">
             <p class="fs-1">Comparacion de eficiencias: </p>
