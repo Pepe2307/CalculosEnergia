@@ -31,7 +31,11 @@ function generar_tabla(){
 
     // Guardamos los datos en una matriz
     array_datos.push([tipo_energia, nombre, energia_gen, presupuesto, tiempo_de_uso])
-    console.log(array_datos)
+    console.log("Matriz de datos:", array_datos)
+    
+    // Array Objetos
+    const array_objeto = Object.assign({}, array_datos);
+    console.log(array_objeto);
 
 
     // Agregamos los datos a la fila
@@ -53,7 +57,7 @@ function generar_tabla(){
         "El sistema energetico recomendado por ser el mas eficiente es el de " + 
         nombre + ", con una eficiencia de: " + efectividad_mas_alta;
     }
-    console.log(efectividad_mas_alta)
+    console.log("Efectividad:", efectividad_mas_alta)
 
 
     alert("La efectividad de la fila ingresada es de: " + efectividad); 
