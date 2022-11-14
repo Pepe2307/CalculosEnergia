@@ -8,8 +8,7 @@ var efectividad;
 let array_datos = [ [] ];
 let efectividad_mas_alta = 0;
 
-
-function generar_tabla(){
+const generar_tabla = () => {
 
     // Obtenemos datos y generamos nueva fila
     tipo_energia = document.getElementById('id_tipo').value;
@@ -62,10 +61,3 @@ function generar_tabla(){
 
     alert("La efectividad de la fila ingresada es de: " + efectividad); 
 }
-
-
-// function comparar_eficiencias(){
-//     alert("La efectividad de la fila ingresada es de: " + efectividad);
-
-//     document.getElementById('eficiencias_id').value = "x"
-// }
