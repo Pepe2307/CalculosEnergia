@@ -8,13 +8,11 @@
     <link rel="stylesheet" type="text/css" href="login_styles.css">
     <link rel="stylesheet" type="text/css" href="../css - bootstrap/bootstrap.css">
     <link rel="icon" href="../Recursos/icon.png">
-    <title>Integrador Ed_It</title>
+    <title>Login</title>
 
 </head>
 
 <body>
-
-    
     
     <!-- Form -->
     <div class="login_form">
@@ -32,7 +30,7 @@
             </label>
 
         
-            <a href="#" class="link">Forgot your password?</a>
+            <a href="#" class="link">Reestablecer contraseña?</a>
 
             <button id="button">Login</button>
         </form>
@@ -45,30 +43,34 @@
 
         <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Lista de usuarios para el inicio de sesion:</h5>
+            <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Usuarios:</h1>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
             <p class="personal_skills">
-                Usuario Admin:
+                
+                Usuario: Pepe
                 <br>
-                Nombre: Pepe - Password: 123
+                Password: 123
                 <br>
+                <br>
+                (Esto es una pagina de demostracion sin proteccion de datos, 
+                en una pagina para un login normal se necesitaria un acceso a un servidor para almacenar ciertos datos y 
+                brindar medidas basicas de seguridad)
+
             </p>
         </div>
         </div>
         <!-- Fin offcanvas -->
-        
 
     </div>
-
     
 
     <!-- Javascript Links -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../js - bootstrap/bootstrap.bundle.min.js"></script>
-    <!-- <script type="text/javascript" src="Javacript/Js_educacionIt.js"></script> -->
+    <script type="text/javascript" src="login_javascript.js"></script>
 
 </body>
 </html>
