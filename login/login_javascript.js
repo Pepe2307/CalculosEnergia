@@ -5,7 +5,7 @@ button.addEventListener('click', (e) => {
     const password = document.getElementById('password').value;
 
     if (username=="pepe" && password==123 ) {
-        location.href = "../Index.html";
+        location.href = "./MainPage/main.html";
     }
     else{
         alert("Invalid user name and/or password!");

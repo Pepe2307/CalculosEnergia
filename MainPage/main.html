@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trabajo integrador de EducacionIt - JAVASCRIPT">
+    <meta name="keywords" content="Trabajo integrado, EducacionIt, Javascript">
+    <link rel="stylesheet" type="text/css" href="../css - bootstrap/bootstrap.css">
+    <link rel="icon" href="../Recursos/icon.png">
+
+    <title>Integrador Ed_It</title>
+</head>
+
+
+<body>
+
+    <!-- Comienzo - Navbar  -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Pablo Paez</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="https://github.com/Pepe2307" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+                Github
+            </a>
+              <a class="nav-link active" href="https://www.linkedin.com/in/pablo-paez-t/" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                LinkedIn
+            </a>
+              <a class="nav-link disabled">
+                Contacto: <br>
+                Mail: pablopaez2307@gmail.com / Celular-WhatsApp: 11 4451-4795
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- Fin - Navbar  -->
+
+
+    <!-- Comienzo offcanvas -->
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        +Info del estudiante
+    </button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Pablo Paez</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p class="personal_skills">
+            -Desarrollador Web
+            <br/>
+            -Profesor
+            <br/>
+            -Programador.
+            <br>
+            <br>
+            <a href="https://www.linkedin.com/in/pablo-paez-t/" class="button" target="_blank">
+                💻LinkedIn💻
+            </a>
+
+        </p>
+    </div>
+    </div>
+    <!-- Fin offcanvas -->
+
+
+    <!-- Comienzo alerts -->
+    <div class="alert alert-dark" role="alert">
+        Tabla de ejemplo:
+    </div>
+    <!-- Fin alerts -->
+
+
+    <!-- Comienzo Table de Ejemplo-->
+    <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Tipo de energia:</th>
+            <th scope="col" >Nombre</th>
+            <th scope="col">Energia Generada</th>
+            <th scope="col">Presupuesto</th>
+            <th scope="col">Tiempo estimado</th>
+            <th scope="col">EFECTIVIDAD</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td scope="row">Eolica</td>
+            <td>Molino X</td>
+            <td>1500 kw/h</td>
+            <td>$10.000</td>
+            <td>1 Mes</td>
+            <th>Calculo de efectividad</th>
+        </tr>
+
+        <tr>
+            <td scope="row">Hidroelectrica</td>
+            <td>Presa X</td>
+            <td>1500 kw/h</td>
+            <td>$10.000</td>
+            <td>1 Mes</td>
+            <th>Calculo de efectividad</th>
+        </tr>
+        
+        <tr>
+            <td scope="row">Solar</td>
+            <td>Paneles X</td>
+            <td>1500 kw/h</td>
+            <td>$10.000</td>
+            <td>1 Mes</td>
+            <th>Calculo de efectividad</th>
+        </tr>
+
+    </tbody>
+    </table>
+    <!-- Fin Table de Ejemplo -->
+
+    
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Agregar datos de nueva fila
+    </button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nuevos datos:</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+
+                        <!-- <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="input_tipo" id="id_tipo"
+                            placeholder="...">
+                            <label for="floatingInput">Tipo de energia:</label>
+                        </div> -->
+
+                        
+                        <select class="form-select mb-3" aria-label="Default select example"
+                        name="input_tipo" id="id_tipo">
+                            <option selected value="">Opciones de energia:</option>
+                            <option value="Eolica">Eolica</option>
+                            <option value="Hidraulica">Hidraulica</option>
+                            <option value="Solar">Solar</option>
+                        </select>
+                        
+                        <!-- <br> -->
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="input_nombre" id="id_nombre"
+                            placeholder="...">
+                            <label for="floatingInput">Nombre:</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="input_energia_gen" id="id_energia"
+                            placeholder="...">
+                            <label for="floatingInput">Energia Generada en kw/h:</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="input_presupuesto" id="id_presupuesto"
+                            placeholder="...">
+                            <label for="floatingInput">Presupuesto:</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" name="input_tiempo" id="id_tiempo" placeholder="...">
+                            <label for="floatingInput">Horas en funcionamiento:</label>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="generar_tabla();">Agregar</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Fin Modal -->
+
+
+    <!-- Comienzo Tabla Generada -->
+    <div class="tabla_generada">
+
+        <!-- Alert -->
+        <div class="alert alert-dark" role="alert">
+            Tabla generada:
+        </div>
+
+       
+        <!-- Tabla generada -->
+        <table class="table" id="tabla_generada_id">
+            <thead>
+                <tr>
+                    <th scope="col">Tipo de energia:</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Energia Generada</th>
+                    <th scope="col">Presupuesto</th>
+                    <th scope="col">Tiempo estimado</th>
+                    <th scope="col">EFECTIVIDAD</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- <tr>
+                    <th scope="row" id="tipo_energia">Eolica</th>
+                    <td id="nombre">Molino X</td>
+                    <td id="energia_gen">1500 kw/h</td>
+                    <td id="presupuesto">$10.000</td>
+                    <td id="tiempo_aprox">1 Mes</td>
+                    <td id="efectividad">1 Mes</td>
+                </tr> -->
+            </tbody>
+        </table>
+
+
+    </div>
+    <!-- Fin Tabla Generada -->
+
+    
+    <!-- Botones -->
+    <div class="botones">
+        <!-- <button class="gen_tabla" onclick="comparar_eficiencias()">
+            <ion-icon name="chevron-down-circle-outline"></ion-icon>
+            Comparar eficiencias:
+            <ion-icon name="chevron-down-circle-outline"></ion-icon>
+        </button> -->
+
+        <!-- <br><br> -->
+
+        <div class="badge bg-primary text-wrap" style="width: 30rem;">
+            <p class="fs-1">Comparacion de eficiencias: </p>
+            <p class="fs-2" id="eficiencias_id"></p>
+        </div>
+    </div>
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="../js - bootstrap/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../Javacript/Js_educacionIt.js"></script>
+    <!-- <script type="text/javascript" src="Javacript/Js_educacionIt.js"></script> -->
+
+</body>
+</html>
